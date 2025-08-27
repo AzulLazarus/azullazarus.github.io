@@ -35,7 +35,7 @@
         <div class="MediaGallery">
           <img src="Images/CursedLandsIcon.webp" alt="Project Image" onclick="OpenModal(this.src)" />
 
-          <img src="https://img.youtube.com/vi/3UvPSZGlJaU/hqdefault.jpg" alt="YouTube Video" class="youtube-thumb"
+          <img src="https://img.youtube.com/vi/3UvPSZGlJaU/hqdefault.jpg" alt="YouTube Video"
             data-YoutubeId="3UvPSZGlJaU" onclick="OpenYouTubeModal(this.dataset.YoutubeId)" />
         </div>
       </div>
@@ -65,7 +65,7 @@
     <div class="ModalContent">
       <img id="ImageModal" style="display: none;" />
       
-      <iframe id="YoutubeModal" width="560" height="315" src="https://www.youtube.com/embed/3UvPSZGlJaU?si=CADLcKiiMOgcciji" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe id="YoutubeModal" width="560" height="315" src="https://www.youtube.com/embed/3UvPSZGlJaU?si=CADLcKiiMOgcciji" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -85,7 +85,7 @@
 
       window.OpenYouTubeModal = function(VideoId) {
         Modal.style.display = "flex";
-        YouTubeModal.src = `https://www.youtube.com/embed/${VideoId}?autoplay=0`;
+        YouTubeModal.src = `https://www.youtube.com/embed/${VideoId}?autoplay=1`;
         YouTubeModal.style.display = "block";
         ImageModal.style.display = "none";
       }
