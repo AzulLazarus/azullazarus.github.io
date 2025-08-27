@@ -6,35 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Azul's Portfolio</title>
   <link rel="stylesheet" href="Index.css"/>
-
-  <script>
-
-    const Modal = document.getElementById("MediaModal");
-    const ImageModal = document.getElementById("ImageModal");
-    const YouTubeModal = document.getElementById("YouTubeModal");
-
-    function OpenModal(Source) {
-      Modal.style.display = "flex";
-
-      ImageModal.src = Source;
-      ImageModal.style.display = "block";
-      YouTubeModal.style.display = "none";
-    }
-
-    function OpenYouTubeModal(VideoId) {
-      Modal.style.display = "flex";
-      YouTubeModal.src = `https://www.youtube.com/embed/${VideoId}?autoplay=1`;
-      YouTubeModal.style.display = "block";
-      ImageModal.style.display = "none";
-    }
-
-    function CloseModal() {
-      Modal.style.display = "none";
-
-      ImageModal.src = "";
-      YouTubeModal.src = "";
-    }
-  </script>
 </head>
 
 <body>
@@ -98,7 +69,35 @@
         allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   </div>
-  
+
+    <script>
+
+    const Modal = document.getElementById("MediaModal");
+    const ImageModal = document.getElementById("ImageModal");
+    const YouTubeModal = document.getElementById("YouTubeModal");
+
+    function OpenModal(Source) {
+      Modal.style.display = "flex";
+
+      ImageModal.src = Source;
+      ImageModal.style.display = "block";
+      YouTubeModal.style.display = "none";
+    }
+
+    function OpenYouTubeModal(VideoId) {
+      Modal.style.display = "flex";
+      YouTubeModal.src = `https://www.youtube.com/embed/${VideoId}?autoplay=1`;
+      YouTubeModal.style.display = "block";
+      ImageModal.style.display = "none";
+    }
+
+    function CloseModal() {
+      Modal.style.display = "none";
+
+      ImageModal.src = "";
+      YouTubeModal.src = "";
+    }
+  </script>
 </body>
 
 </html>
