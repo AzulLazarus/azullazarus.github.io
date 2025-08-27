@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Azul's Portfolio</title>
+
+  <link rel="icon" type="image/x-icon" href="./Images/Favicon.ico">
   <link rel="stylesheet" href="Index.css" />
 </head>
 
@@ -13,6 +15,7 @@
     <h1>Azul's Portfolio</h1>
     <nav>
       <a href="#Projects">Projects</a>
+      <a href="#Systems">Systems</a>
       <a href="#About">About</a>
       <a href="#Contact">Contact</a>
     </nav>
@@ -27,16 +30,134 @@
   <section id="Projects">
     <h2>Projects</h2>
     <div class="List">
+
+      <div class="Project">
+        <h3>Cursed Lands (Remake)</h3>
+        <p>Solo developer, so everything, it's the same project as Cursed Lands but with tons of upgrades and updates,
+          made from scratch.</p>
+        <p>December 2024 - Current</p>
+
+        <div class="MediaGallery">
+          <img src="https://img.youtube.com/vi/rG5QZgiK0Ds/hqdefault.jpg" alt="YouTube Video"
+            onclick="OpenYouTubeModal('rG5QZgiK0Ds')" />
+
+          <img src="https://img.youtube.com/vi/liVb36w2euY/hqdefault.jpg" alt="YouTube Video"
+            onclick="OpenYouTubeModal('liVb36w2euY')" />
+        </div>
+
+        <p><a target="_blank" href="https://www.roblox.com/games/11126622360/Cursed-Lands-Test-Realm">Game Link</a></p>
+      </div>
+
       <div class="Project">
         <h3>Cursed Lands</h3>
         <p>Solo developer, so everything.</p>
-        <p>2021 - Current</p>
+        <p>June 2021 - Current</p>
 
         <div class="MediaGallery">
           <img src="Images/CursedLandsIcon.webp" alt="Project Image" onclick="OpenModal(this.src)" />
 
           <img src="https://img.youtube.com/vi/3UvPSZGlJaU/hqdefault.jpg" alt="YouTube Video"
-            data-YoutubeId="3UvPSZGlJaU" onclick="OpenYouTubeModal(this.dataset.YoutubeId)" />
+            onclick="OpenYouTubeModal('3UvPSZGlJaU')" />
+        </div>
+
+        <p><a target="_blank" href="https://www.roblox.com/games/6948971171/Cursed-Lands">Game Link</a></p>
+      </div>
+
+      <div class="Project">
+        <h3>Baby Punching Incremental</h3>
+        <p>Solo developer, so everything.</p>
+        <p>August 2025 - Current (Paused for now)</p>
+
+        <div class="MediaGallery">
+          <img src="Images/BabyPunchingIncrementalIcon.png" alt="Project Image" onclick="OpenModal(this.src)" />
+        </div>
+
+        <p><a target="_blank" href="https://www.roblox.com/games/87639456616837/UPGRADES-baby-punching-incremental">Game Link</a></p>
+      </div>
+
+      <div class="Project">
+        <h3>TEMPORAL!!TAKEDOWN</h3>
+        <p>Co-Owner, solo developer so really everything, from UI to Scripting to VFX, etc.</p>
+        <p>Oct 2024 - Dec 2024</p>
+
+        <div class="MediaGallery">
+          <img src="Images/TemporalTakedownIcon.png" alt="Project Image" onclick="OpenModal(this.src)" />
+          <img src="Images/TemporalTakedownThumbnail.png" alt="Project Image" onclick="OpenModal(this.src)" />
+        </div>
+
+        <p><a target="_blank" href="https://www.roblox.com/games/129909201472916/TEMPORAL-TAKEDOWN">Game Link</a></p>
+      </div>
+
+      <div class="Project">
+        <h3>Infinite Rarities: Ascended</h3>
+        <p>Solo developer, so everything. Owned by SL Lab.</p>
+        <p>March 2024 - December 2024</p>
+
+        <div class="MediaGallery">
+          <img src="Images/InfiniteRaritiesIcon.webp" alt="Project Image" onclick="OpenModal(this.src)" />
+        </div>
+
+        <p><a target="_blank" href="https://www.roblox.com/games/16199429957/Infinite-Rarities-Ascended">Game Link</a></p>
+      </div>
+
+      <div class="Project">
+        <h3>Flex Your Luck / Fortune's End</h3>
+        <p>Scripter. Owned by SL Lab.</p>
+        <p>January 2024 - December 2024</p>
+
+        <div class="MediaGallery">
+          <img src="Images/FortunesEndIcon.webp" alt="Project Image" onclick="OpenModal(this.src)" />
+        </div>
+
+        <p><a target="_blank" href="https://www.roblox.com/games/15296932900/Fortunes-End-RNG">Game Link</a></p>
+      </div>
+
+      <div class="Project">
+        <h3>prtty much evry bordr gam evr / bordr gam</h3>
+        <p>Development manager, scripter and animator. Owned by Mr_Wiggles.</p>
+        <p>January 2022 - July 2024 (Left because Mr_Wiggles is a <a href="https://drive.google.com/file/d/1p2efWETHTD9X014pbMEA8-5AhjkZCVgY/view?usp=sharing">predator</a>, evidence starts at 4:22)</p>
+
+        <div class="MediaGallery">
+          <img src="Images/BordrIcon.png" alt="Project Image" onclick="OpenModal(this.src)" />
+        </div>
+
+        <p><a target="_blank" href="https://www.roblox.com/games/3411100258/THE-KING-bordr-gam">Game Link</a></p>
+      </div>
+  </section>
+
+  <section id="Systems">
+    <h2>Scripted Systems</h2>
+
+    <div class="Systems">
+      <div>
+        <h4>Movement System <br/>(Running, Sliding, Wall Climbing and Dashing)</h4>
+         <div class="MediaGallery">
+          <img src="https://img.youtube.com/vi/ZvXvB7qNoxk/hqdefault.jpg" alt="YouTube Video"
+            onclick="OpenYouTubeModal('ZvXvB7qNoxk')" />
+        </div>
+      </div>
+
+      <div>
+        <h4>Magic System <br/>(VFX, Damage/Hitboxes and Mana)</h4>
+         <div class="MediaGallery">
+          <img src="https://img.youtube.com/vi/1S5_SRlSlTE/hqdefault.jpg" alt="YouTube Video"
+            onclick="OpenYouTubeModal('1S5_SRlSlTE')" />
+        </div>
+      </div>
+
+      <div>
+        <h4>Inventory System</h4>
+         <div class="MediaGallery">
+          <img src="https://img.youtube.com/vi/CElB7R40QVI/hqdefault.jpg" alt="YouTube Video"
+            onclick="OpenYouTubeModal('CElB7R40QVI')" />
+        </div>
+      </div>
+
+      <div>
+        <h4>Custom Hotbar System</h4>
+         <div class="MediaGallery">
+          <img src="https://img.youtube.com/vi/7jd_0WLKDPc/hqdefault.jpg" alt="YouTube Video"
+            onclick="OpenYouTubeModal('7jd_0WLKDPc')" />
         </div>
       </div>
     </div>
@@ -50,12 +171,15 @@
 
   <section id="Contact">
     <h2>Contact</h2>
-    <p>I'm currently looking for commission one-time work, I am willing to hear you out on short-term or long-term work
+    <p>I'm currently looking for commission one-time work, I am willing to hear you out on short-term or long-term work though, don't be scared to contact me.
     </p>
 
     <div>
-      <img class="DiscordIcon" src="Images/Discord.png" alt="Discord Icon">
-      <span>azul01</span>
+      <img class="Icon" src="Images/Discord.png" alt="Discord Icon">
+      <span>azul01_</span>
+      <br />
+      <img class="Icon" src="Images/Roblox.png" alt="Roblox Icon">
+      <span>AzulLazarus</span>
     </div>
 
   </section>
@@ -64,8 +188,11 @@
     <span class="Close">&times;</span>
     <div class="ModalContent">
       <img id="ImageModal" style="display: none;" />
-      
-      <iframe id="YoutubeModal" width="560" height="315" src="https://www.youtube.com/embed/3UvPSZGlJaU?si=CADLcKiiMOgcciji" title="YouTube Video Player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe id="YoutubeModal" width="560" height="315" src="https://www.youtube.com/embed/"
+        title="YouTube Video Player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </div>
 
@@ -73,9 +200,9 @@
     document.addEventListener("DOMContentLoaded", () => {
       const Modal = document.getElementById("MediaModal");
       const ImageModal = document.getElementById("ImageModal");
-      const YouTubeModal = document.getElementById("YouTubeModal");
+      const YouTubeModal = document.getElementById("YoutubeModal");
 
-      window.OpenModal = function(Source) {
+      window.OpenModal = function (Source) {
         Modal.style.display = "flex";
 
         ImageModal.src = Source;
@@ -83,14 +210,15 @@
         YouTubeModal.style.display = "none";
       }
 
-      window.OpenYouTubeModal = function(VideoId) {
+      window.OpenYouTubeModal = function (VideoId) {
         Modal.style.display = "flex";
-        YouTubeModal.src = `https://www.youtube.com/embed/${VideoId}?autoplay=1`;
+        console.log(VideoId, YouTubeModal);
+        YouTubeModal.src = `https://www.youtube.com/embed/${VideoId}`;
         YouTubeModal.style.display = "block";
         ImageModal.style.display = "none";
       }
 
-      window.CloseModal = function() {
+      window.CloseModal = function () {
         Modal.style.display = "none";
 
         ImageModal.src = "";
