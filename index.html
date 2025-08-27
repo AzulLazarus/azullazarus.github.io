@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Azul's Portfolio</title>
-  <link rel="stylesheet" href="Index.css"/>
+  <link rel="stylesheet" href="Index.css" />
 </head>
 
 <body>
@@ -33,10 +33,10 @@
         <p>2021 - Current</p>
 
         <div class="MediaGallery">
-          <img src="Images/CursedLandsIcon.webp" alt="Project Image" onclick="OpenModal(this.src)"/>
+          <img src="Images/CursedLandsIcon.webp" alt="Project Image" onclick="OpenModal(this.src)" />
 
           <img src="https://img.youtube.com/vi/3UvPSZGlJaU/hqdefault.jpg" alt="YouTube Video" class="youtube-thumb"
-            data-YoutubeId="3UvPSZGlJaU" onclick="OpenYouTubeModal(this.dataset.YoutubeId)"/>
+            data-YoutubeId="3UvPSZGlJaU" onclick="OpenYouTubeModal(this.dataset.YoutubeId)" />
         </div>
       </div>
     </div>
@@ -63,40 +63,41 @@
   <div id="MediaModal" class="Modal" onclick="CloseModal()">
     <span class="Close">&times;</span>
     <div class="ModalContent">
-      <img id="ImageModal" style="display: none;"/>
+      <img id="ImageModal" style="display: none;" />
 
       <iframe id="YouTubeModal" style="display: none; width: 100%; height: 100%; border: none;"
         allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   </div>
 
-    <script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const Modal = document.getElementById("MediaModal");
+      const ImageModal = document.getElementById("ImageModal");
+      const YouTubeModal = document.getElementById("YouTubeModal");
 
-    const Modal = document.getElementById("MediaModal");
-    const ImageModal = document.getElementById("ImageModal");
-    const YouTubeModal = document.getElementById("YouTubeModal");
+      window.OpenModal = function(Source) {
+        Modal.style.display = "flex";
 
-    function OpenModal(Source) {
-      Modal.style.display = "flex";
+        ImageModal.src = Source;
+        ImageModal.style.display = "block";
+        YouTubeModal.style.display = "none";
+      }
 
-      ImageModal.src = Source;
-      ImageModal.style.display = "block";
-      YouTubeModal.style.display = "none";
-    }
+      window.OpenYouTubeModal = function(VideoId) {
+        Modal.style.display = "flex";
+        YouTubeModal.src = `https://www.youtube.com/embed/${VideoId}?autoplay=1`;
+        YouTubeModal.style.display = "block";
+        ImageModal.style.display = "none";
+      }
 
-    function OpenYouTubeModal(VideoId) {
-      Modal.style.display = "flex";
-      YouTubeModal.src = `https://www.youtube.com/embed/${VideoId}?autoplay=1`;
-      YouTubeModal.style.display = "block";
-      ImageModal.style.display = "none";
-    }
+      window.CloseModal = function() {
+        Modal.style.display = "none";
 
-    function CloseModal() {
-      Modal.style.display = "none";
-
-      ImageModal.src = "";
-      YouTubeModal.src = "";
-    }
+        ImageModal.src = "";
+        YouTubeModal.src = "";
+      }
+    });
   </script>
 </body>
 
